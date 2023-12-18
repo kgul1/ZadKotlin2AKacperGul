@@ -1,7 +1,40 @@
+import java.util.Scanner
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val scanner = Scanner(System.`in`)
+    print("podaj dzien tygodnia")
+    val dzien=scanner.nextInt()
+   while(dzien <= 7) {
+       if(dzien==1){
+           print("poniedzialek")
+           break
+       }
+    else   if(dzien==2){
+           print("wtorek")
+           break
+       }
+       else  if(dzien==3){
+           print("sroda")
+           break
+       }
+       else  if(dzien==4){
+           print("czwartek")
+           break
+       }
+       else  if(dzien==5){
+           print("piatek")
+           break
+       }
+       else   if(dzien==6){
+           print("sobota")
+           break
+       }
+       else  if(dzien==7){
+           print("niedziela")
+           break
+       }
+       
+   }
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+
+
 }
